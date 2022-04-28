@@ -22,30 +22,30 @@ function Navbar() {
     }
   }
   return (
-    <div class="navbar bg-neutral text-neutral-content">
-      <div class="flex-1">
-        <a class="btn btn-ghost normal-case text-xl">DEbets</a>
+    <div className="navbar bg-neutral text-neutral-content">
+      <div className="flex-1">
+        <a className="btn btn-ghost normal-case text-xl">DEbets</a>
       </div>
 
 
-      <div class="flex-none">
-        <ul class="menu menu-horizontal p-0">
+      <div className="flex-none">
+        <ul className="menu menu-horizontal p-0">
           <li>{active ? <span>Connected with <b>{account}</b></span> : <span>Not connected</span>}</li>
         </ul>
       </div>
-      <div class="flex-none gap-2">
+      <div className="flex-none gap-2">
 
-        <div class="dropdown dropdown-end">
-          <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-            <div class="w-10 rounded-full">
+        <div className="dropdown dropdown-end">
+          <label tabIndex="0" className="btn btn-ghost btn-circle avatar">
+            <div className="w-10 rounded-full">
               <img src="https://api.lorem.space/image/face?hash=33791" />
             </div>
           </label>
-          <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content  bg-neutral text-neutral-conten rounded-box w-52">
+          <ul tabIndex="0" className="mt-3 p-2 shadow menu menu-compact dropdown-content  bg-neutral text-neutral-conten rounded-box w-52">
             <li>
-              <a class="justify-between">
+              <a className="justify-between">
                 Profile
-                <span class="badge">New</span>
+                <span className="badge">New</span>
               </a>
             </li>
             <li><a>Settings</a></li>

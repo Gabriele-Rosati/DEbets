@@ -2,6 +2,7 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from './pages/Home';
+import MatchDetails from './pages/MatchDetails';
 import env from "react-dotenv";
 
 
@@ -23,14 +24,13 @@ function App() {
     return json
 
   }
-  if(data !== '')
-  console.log(data[0].games)
-
+  
   return (
     <div className="App">
       <Router>
         <Routes>
           <Route path="/" element={<Home data={data}/>} />
+          <Route path="/matchDetails/:id" element={<MatchDetails/>} />
         </Routes>
       </Router>
     </div>

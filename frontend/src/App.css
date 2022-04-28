@@ -28,10 +28,32 @@
   color: #61dafb;
 }
 
+.myTable {
+  width: 100%;
+  display: flex;
+}
+
+.tableImage {
+  width: 100px;
+  height: 100px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.thead{
+  text-align: center;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
