@@ -1,10 +1,18 @@
+import Navbar from "../components/navbar"
+import { Web3ReactProvider } from '@web3-react/core'
+import { Web3Provider } from "@ethersproject/providers";
+
+function getLibrary(provider) {
+  return new Web3Provider(provider);
+}
+
 function Home() {
   return (
-    <div class="card-normal bg-green-500">
-        <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    </div>
+    <Web3ReactProvider getLibrary={getLibrary}>
+      <div className="App">
+        <Navbar />
+      </div>
+    </Web3ReactProvider>
   )
 }
 
