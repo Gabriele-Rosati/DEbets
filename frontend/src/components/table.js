@@ -13,7 +13,7 @@ function Table(props) {
 
         return (
             <div>
-                <div class="overflow-x-auto">
+                <div class="overflow-x-auto collapse">
                     <table class="table w-full">
                         <thead className='thead'>
                             <tr>

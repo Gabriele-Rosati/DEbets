@@ -13,6 +13,7 @@ function Home(props) {
     <Web3ReactProvider getLibrary={getLibrary}>
       <div className="App">
         <Navbar />
+        <Table data={props.liveData}/>
         <Table data={props.data}/>
       </div>
     </Web3ReactProvider>

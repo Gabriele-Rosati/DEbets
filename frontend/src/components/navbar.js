@@ -42,13 +42,11 @@ function Navbar() {
             </div>
           </label>
           <ul tabIndex="0" className="mt-3 p-2 shadow menu menu-compact dropdown-content  bg-neutral text-neutral-conten rounded-box w-52">
-            <li>
+            {active ? <li>
               <a className="justify-between">
                 Profile
-                <span className="badge">New</span>
               </a>
-            </li>
-            <li><a>Settings</a></li>
+            </li> : null}
             <li>{active ? <a onClick={disconnect}>Logout</a> : <a onClick={connect}>Login</a>}</li>
           </ul>
         </div>

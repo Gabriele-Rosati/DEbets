@@ -44,9 +44,16 @@
   margin-right: auto;
 }
 
+.collapse-title, .collapse > input[type="checkbox"] {
+  width: 100%;
+  padding: 1rem;
+  min-height: 3.75rem;
+  transition: background-color 0.2s ease-in-out;
+}
 
 .thead{
   text-align: center;
+  justify-content: center;
 }
 
 @keyframes App-logo-spin {
